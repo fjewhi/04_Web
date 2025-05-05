@@ -1,10 +1,10 @@
 body {background-color: #33fff0;}
 
-
-
-img, video{
-	max-width: 42%;
-	height: auto;
+main {
+  max-width: 922px;         
+  margin: 0 auto;          
+  padding: 8px;            
+  box-sizing: border-box;
 }
 
 header {
@@ -13,17 +13,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: -5px -57px;
+  padding: 16px 22px;
 }
-
 .site-title {
-  font-size: 2.1em;
+  font-size: 2.4em;
 }
 
 nav ul {
   list-style: none;
   display: flex; 
-  gap: 33px;
+  gap: 38px;
 }
 
 nav ul li {
@@ -36,21 +35,81 @@ nav ul li a {
 }
 
 footer{
-    border-top: 2px solid #333333;
-    margin-top:1rem;
+    border-top: 1px solid #333333;
+    margin-top:-1rem;
     padding-top: 1rem;
 }
 
+/* Only apply to image.html */
+  .images-page figure {
+    display: flex;
+    flex-direction: row;   
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 1px;
+    margin: 0;
+  }
 
-main{
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
+  .images-page figure img {
+    max-width: 335px;
+    height: auto;
+    margin-right: 21px;
+    flex-shrink: 0;
+  }
+
+  .images-page figure p {
+    max-width: 538px;
+    margin: 0 0 2px 0;
+  }
+
+  .images-page figure figcaption {
+  margin-top: 1px;
+  font-size: 0.9em;
+  color: #555;
+  text-align: left; 
+  width: 100%;
+  max-width: -147px;
 }
-figure{
-  
+/* Only apply to image.html */
+
+/* Only apply to index.html */
+.index-page figure {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0;
+}
+
+.index-page figure img {
+  max-width: 36%;
+  height: auto;
+  display: block;
+}
+/* Only apply to index.html */
+
+/* Only apply to amination.html */
+.animation-page figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1px auto;
   text-align: center;
 }
+
+.animation-page video {
+  width: 53%; 
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.animation-page figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0;
+}
+
 
 h1,h2 {
   text-align: center;
